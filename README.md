@@ -46,11 +46,11 @@ size
 ## 📀 Install
 
 ```bash
-npm i @mutoco/fab-unit
+npm i fab-unit
 ```
 
 ```scss
-@import "@mutoco/fab-unit";
+@import "fab-unit";
 
 html {
   font-size: calc(100% * (#{strip-units($fab-rem-base)} / 16)); // px to rem
@@ -126,4 +126,4 @@ h1 {
 ## 🔥 Links
 [→ FabUnit Visualiser](https://codepen.io/Faboolea/live/yLvGMqZ/ed43660a7931e55b2fb2ec35d18e7f8c)  
 [→ Example CodeSandbox](https://codesandbox.io/s/fabunit-ow8wjr)  
-[→ Article Smashing Magazine*](https://XXXXXXXXX/)
+[→ Article Smashing Magazine*](#)
