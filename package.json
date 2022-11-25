@@ -1,0 +1,42 @@
+{
+  "name": "fbntt",
+  "version": "1.0.0",
+  "description": "A sass function that helps you to define a perfectly responsive value without any effort",
+  "files": [
+    "_fab-unit.scss",
+    "_index.scss"
+  ],
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faboolea/fab-unit.git"
+  },
+  "keywords": [
+    "responsive",
+    "css",
+    "scss",
+    "scss tool",
+    "scss function",
+    "scss goody",
+    "scss utility",
+    "scss helper",
+    "sass",
+    "fab-unit",
+    "fabunit",
+    "typo",
+    "fluid",
+    "sizes",
+    "font-size",
+    "margin",
+    "padding"
+  ],
+  "author": "Faboolea <dev@dimorph.ch>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/faboolea/fab-unit.git/issues"
+  },
+  "homepage": "https://github.com/faboolea/fab-unit.git#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}

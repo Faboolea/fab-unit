@@ -1,0 +1,65 @@
+@use "sass:math";
+
+
+/* Helper functions */
+
+$fab-rem-base: 10px;
+
+@function strip-units($number) {
+    @if (math.is-unitless($number)) {
+        @return $number;
+    } @else {
+        @return math.div($number, $number * 0 + 1);
+    }
+}
+
+@function rem($size){
+    @if (math.compatible($size, 1rem) and not math.is-unitless($size)) {
+        @return $size;
+    } @else {
+        @return math.div(strip-units($size), strip-units($fab-rem-base)) * 1rem;
+    }
+}
+
+
+/* Default values fab-unit 🪄 */
+
+$fab-size-min: 16;
+$fab-size-opt: 22;
+$fab-screen-min: 375;
+$fab-screen-opt-start: 1024;
+$fab-screen-opt-end: 1440;
+$fab-screen-max: 1800;
+$fab-aspect-ratio: math.div(16, 9);
+
+
+/* Magic function fab-unit 🪄 */
+
+@function fab-unit(
+    $size-min: $fab-size-min, 
+    $size-opt: $fab-size-opt, 
+    $screen-min: $fab-screen-min, 
+    $screen-opt-start: $fab-screen-opt-start, 
+    $screen-opt-end: $fab-screen-opt-end, 
+    $screen-max: $fab-screen-max,
+    $aspect-ratio: $fab-aspect-ratio,
+    ) {
+    $screen-factor: min(100vw, 100vh * #{$aspect-ratio});
+    $steep-slope: math.div(($size-opt - $size-min), ($screen-opt-start - $screen-min)) * 100 > 1;
+    $slope1: calc(#{rem($size-min)} + (#{$size-opt} - #{$size-min}) * (#{$screen-factor} - #{rem($screen-min)}) / (#{$screen-opt-start} - #{$screen-min}));
+    $slope2: calc(#{$screen-factor} / #{$screen-opt-end} * #{$size-opt});
+    @if $screen-max {
+        $size-max: math.div(rem($screen-max), $screen-opt-end) * $size-opt;
+        @if $steep-slope {
+            @return clamp(#{rem($size-min)}, #{$slope1}, clamp(#{rem($size-opt)}, #{$slope2}, #{$size-max}));
+        } @else {
+            @return clamp(clamp(#{rem($size-min)}, #{$slope1}, #{rem($size-opt)}), #{$slope2}, #{$size-max});
+        }
+    } @else {
+        @if $steep-slope {
+            @return clamp(#{rem($size-min)}, #{$slope1}, max(#{rem($size-opt)}, #{$slope2}));
+        } @else {
+            @return max(clamp(#{rem($size-min)}, #{$slope1}, #{rem($size-opt)}), #{$slope2});
+        }
+    }
+}
