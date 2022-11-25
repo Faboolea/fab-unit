@@ -67,7 +67,7 @@ body {
     font-size: fab-unit(16, 22); // min, opt
 }
 ```
-[→ Example CodeSandbox](https://codesandbox.io/s/fabunit-ow8wjr)
+[→ Example CodeSandbox](https://codesandbox.io/s/fabunit-ow8wjr?file=/src/styles.scss)
   
 &nbsp;
 
@@ -108,7 +108,7 @@ h1 {
   margin-inline: auto;
 }
 ```
-[→ Example CodeSandbox](https://codesandbox.io/s/fabunit-ow8wjr)
+[→ Example CodeSandbox](https://codesandbox.io/s/fabunit-ow8wjr?file=/src/styles.scss)
   
 &nbsp;
 
@@ -125,5 +125,5 @@ h1 {
 
 ## 🔥 Links
 [→ FabUnit Visualiser](https://codepen.io/Faboolea/live/yLvGMqZ/ed43660a7931e55b2fb2ec35d18e7f8c)  
-[→ Example CodeSandbox](https://codesandbox.io/s/fabunit-ow8wjr)  
+[→ Example CodeSandbox](https://codesandbox.io/s/fabunit-ow8wjr?file=/src/styles.scss)  
 [→ Article Smashing Magazine*](#)
