@@ -1,12 +1,11 @@
 {
   "name": "fab-unit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A sass function that helps you to define a perfectly responsive value without any effort",
   "files": [
     "_fab-unit.scss",
     "_index.scss"
   ],
-  "sideEffects": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/faboolea/fab-unit.git"

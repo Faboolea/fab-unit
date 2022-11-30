@@ -1,6 +1,6 @@
 # FabUnit 🪄
 
-FabUnit is a sass function that helps you to define a perfectly responsive value without any effort. It takes a minimum and an optimum value, spits out a calculation to your css property, considering the screen width, aspect ratio and the specified anchor points. No media queries, no break points, no design jumps. A formula that controls and synchronises your whole project.
+FabUnit is a Sass function that helps you to define a perfectly responsive value without any effort. It takes a minimum and an optimum value, spits out a calculation to your css property, considering the screen width, aspect ratio and the specified anchor points. No media queries, no break points, no design jumps. A formula that controls and synchronises your whole project.
 
 ```scss
 fab-unit(12, 16); 🪄
@@ -126,4 +126,4 @@ h1 {
 ## 🔥 Links
 [→ FabUnit Visualiser](https://codepen.io/Faboolea/live/yLvGMqZ/ed43660a7931e55b2fb2ec35d18e7f8c)  
 [→ Example CodeSandbox](https://codesandbox.io/s/fabunit-ow8wjr?file=/src/styles.scss)  
-[→ Article Smashing Magazine*](#)
+<!-- [→ Article Smashing Magazine*](#) -->
