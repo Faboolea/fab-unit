@@ -126,4 +126,4 @@ h1 {
 ## 🔥 Links
 [→ FabUnit Visualiser](https://codepen.io/Faboolea/live/yLvGMqZ/ed43660a7931e55b2fb2ec35d18e7f8c)  
 [→ Example CodeSandbox](https://codesandbox.io/s/fabunit-ow8wjr?file=/src/styles.scss)  
-<!-- [→ Article Smashing Magazine*](#) -->
+[→ Article Smashing Magazine](https://www.smashingmagazine.com/2022/12/fabunit-smart-way-control-synchronize-typo-space/)

@@ -1,7 +1,7 @@
 {
   "name": "fab-unit",
-  "version": "1.0.4",
-  "description": "A sass function that helps you to define a perfectly responsive value without any effort",
+  "version": "1.0.5",
+  "description": "A Sass function that helps you to define a perfectly responsive value without any effort",
   "files": [
     "_fab-unit.scss",
     "_index.scss"
