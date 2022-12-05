@@ -1,9 +1,19 @@
 @use "sass:math";
 
 
-/* Helper functions */
+/* Default values fab-unit 🪄 */
 
-$fab-rem-base: 10px;
+$fab-rem-base: 10px !default;
+$fab-size-min: 16 !default;
+$fab-size-opt: 22 !default;
+$fab-screen-min: 375 !default;
+$fab-screen-opt-start: 1024 !default;
+$fab-screen-opt-end: 1440 !default;
+$fab-screen-max: 1800 !default;
+$fab-aspect-ratio: math.div(16, 9) !default;
+
+
+/* Helper functions */
 
 @function strip-units($number) {
     @if (math.is-unitless($number)) {
@@ -20,17 +30,6 @@ $fab-rem-base: 10px;
         @return math.div(strip-units($size), strip-units($fab-rem-base)) * 1rem;
     }
 }
-
-
-/* Default values fab-unit 🪄 */
-
-$fab-size-min: 16;
-$fab-size-opt: 22;
-$fab-screen-min: 375;
-$fab-screen-opt-start: 1024;
-$fab-screen-opt-end: 1440;
-$fab-screen-max: 1800;
-$fab-aspect-ratio: math.div(16, 9);
 
 
 /* Magic function fab-unit 🪄 */
